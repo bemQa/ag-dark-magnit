@@ -219,6 +219,26 @@ $(document).ready(function () {
         swipe: false
     });
 
+    if($('.course-list').length) {
+        $('.course-list').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: true,
+            // centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }
+
     $('.superwinner-slider').slick({
         dots: false,
         arrows: true,
