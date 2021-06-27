@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Alpengold Revamp Magnit</title>
+	<title>Alpengold Dark Magnit</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -33,6 +33,8 @@
 						<a href="winners.html" class="menu-link">Победители</a>
 						<a href="faq.html" class="menu-link active">Вопрос-ответ</a>
 						<a href="lk.html" class="menu-link login-link pop-op" data-popup="auth">Личный кабинет</a>
+						<!-- только для авторизованных -->
+						<a href="index.html" class="logout-link link mobile-visible">Выйти</a>
 					</nav>
 					<div class="ex"></div>
 				</div>
@@ -292,7 +294,9 @@
 					<a href="#!" class="link" target="_blank">Пользовательское соглашение</a>
 				</div>
 				<div class="footer-text">
-					 * Срок проведения Акции с 10.03.2021 по 30.05.2021, включая срок регистрации чеков с 10.03.2021 по 07.04.2021. Информацию об организаторе Акции, о правилах ее проведения, количестве призов, сроках, месте и порядке их получения можно получить на сайте magnit.alpengold.me. ** Alpen Gold — Альпен Гольд. *** Бренд Alpen Gold находится на первом месте в денежном выражении на основании данных Nielsen RMS для категории «Шоколадные плитки» за 12 месяцев, завершившихся 31.10.2020 г., для общего рынка розничной торговли в Российской Федерации, действительно по состоянию на 16.12.2020 (©ООО «ЭЙ СИ НИЛЬСЕН», 2020г.).
+					*Срок проведения Акции с 01.07.2021 по 31.10.2021 , включая срок  приобретения Продукции в магазинах торговой сети «Магнит» и регистрации чеков с 01.07.2021 по 15.08.2021. Информацию об организаторе Акции, о правилах её проведения, количестве призов, сроках, месте и порядке их получения можно получить  на magnitdark.alpengold.me. <br>
+					**Бренд Alpen Gold (Альпен Гольд) находится на первом месте в денежном выражении на основании данных Nielsen RMS для категории «Шоколадные плитки» за 12 месяцев, завершившихся 31.10.2020г., для общего рынка розничной торговли в Российской Федерации, действительно по состоянию на 16.12.2020 (©️ООО «ЭЙ СИ НИЛЬСЕН», 2020г.). <br>
+					*** BITTER – горький. **** DARK – темный.
 				</div>
 				<div class="footer-wrapper">
 					<div class="footer-contacts">
@@ -323,12 +327,8 @@
 	<div class="popups">
 		<div id="auth" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -359,13 +359,8 @@
 		</div>
 		<div id="reg" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
-            	<div class="decor-bottom desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -430,21 +425,105 @@
 	                        </div>
 						</div>
 						<div class="btn-wrapper">
-							<!-- <button class="btn"><span>Войти</span></button> -->
-							<a href="#!" class="btn popup-btn pop-op" data-popup="reg-success">Отправить</a>
+							<!-- <button class="btn">Войти</button> -->
+							<a href="#!" class="btn popup-btn pop-op" data-popup="reg-call">Отправить</a>
 						</div>
                     </form>
                 </div>
             </div>
 		</div>
+		<div id="reg-call" class="popup">
+			<div class="popup__wrap">
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                    <div class="popup__title">Подтверждение <br>номера</div>
+                    <div class="popup__error"></div>
+                    <div class="popup__desc">Введите последние 4 цифры номера, с которого был звонок на номер: <br>+7 999 999 99 99</div>
+                    <form class="popup-form">
+                    	<div class="call-wrapper">
+                    		<div class="input-field">
+	                    		<input type="text" name="num1" maxlength="1" required>
+	                    	</div>
+	                    	<div class="input-field">
+	                    		<input type="text" name="num2" maxlength="1" required>
+	                    	</div>
+	                    	<div class="input-field">
+	                    		<input type="text" name="num3" maxlength="1" required>
+	                    	</div>
+	                    	<div class="input-field">
+	                    		<input type="text" name="num4" maxlength="1" required>
+	                    	</div>
+                    	</div>
+                    	<div class="call-link-wrapper">
+                    		<a href="#!" class="call-link link">Сделать звонок повторно</a>
+                    		<span class="clock-text" style="display: none;">Сделать звонок повторно через <span class="clock"></span></span>
+                    	</div>
+                    	<div class="btn-wrapper">
+							<!-- <button class="btn popup-btn">Отправить</button> -->
+							<a href="#!" class="btn popup-btn pop-op" data-popup="reg-password">Отправить</a>
+						</div>
+                    </form>
+                </div>
+            </div>
+		</div>
+		<div id="reg-password" class="popup">
+			<div class="popup__wrap">
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                    <div class="popup__title">Установка пароля</div>
+                    <div class="popup__error"></div>
+                    <form class="popup-form">
+                    	<div class="input-field">
+                    		<input type="password" name="password1" placeholder="Пароль" required>
+                    	</div>
+                    	<div class="input-field mb30">
+                    		<input type="password" name="password2" placeholder="Подтвердите пароль" required>
+                    	</div>
+                    	<div class="btn-wrapper">
+							<!-- <button class="btn popup-btn">Установить</button> -->
+							<a href="#!" class="btn popup-btn pop-op" data-popup="reg-password-success">Установить</a>
+						</div>
+                    </form>
+                </div>
+            </div>
+		</div>
+		<div id="reg-password-success" class="popup">
+			<div class="popup__wrap">
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                    <div class="popup__title">Установка пароля</div>
+                    <div class="popup__desc">Новый пароль успешно установлен</div>
+                    <div class="btn-wrapper">
+						<a href="#!" class="btn popup-btn pop-op" data-popup="auth">Войти</a>
+					</div>
+                </div>
+            </div>
+		</div>
 		<div id="reg-success" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -462,12 +541,8 @@
 		</div>
 		<div id="restore-password" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -494,12 +569,8 @@
 		</div>
 		<div id="check-upload" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -516,12 +587,8 @@
 		</div>
 		<div id="check-rejected" class="popup">
 			<div class="popup__wrap">
-				<div class="decor-left1 desktop-visible"></div>
-            	<div class="decor-left2 desktop-visible"></div>
-            	<div class="decor-left3 desktop-visible"></div>
-            	<div class="decor-right1 desktop-visible"></div>
-            	<div class="decor-right2 desktop-visible"></div>
-            	<div class="decor-right3 desktop-visible"></div>
+				<div class="decor-back desktop-visible"></div>
+            	<div class="decor-front desktop-visible"></div>
 				<a href="#!" class="close-popup js-close-popup">
 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />

@@ -263,15 +263,13 @@ $(document).ready(function () {
     });
 
     if($(window).innerWidth() < 1000) {
-        $('.products-title').one('click', function() {
-            $(this).parent().find('.products-list').slick({
-                dots: false,
-                arrows: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            });
+        $('.products-list').slick({
+            dots: false,
+            arrows: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1
         });
     }
 

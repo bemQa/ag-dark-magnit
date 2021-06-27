@@ -1711,14 +1711,11 @@ table td:nth-child(3) {
 }
 
 .products-group {
+    background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
     border-radius: 22px;
     box-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
     margin-bottom: 20px;
     transition: all .2s linear;
-}
-
-.products-group.active {
-    background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
 }
 
 .products-title {
@@ -1726,69 +1723,42 @@ table td:nth-child(3) {
     display: flex;
     -ms-align-items: center;
     align-items: center;
+    justify-content: center;
     height: 100px;
-    padding: 0 15px;
+    padding: 35px 15px 0;
     font-weight: 900;
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     color: #682700;
-    background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
+    /*background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);*/
     border-radius: 22px;
     cursor: pointer;
 }
 
-.products-title::after {
-    content: 'Развернуть список';
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 15px;
-    bottom: 0;
-    margin: auto;
-    width: 218px;
-    height: 50px;
-    background: url(../img/plus-products.svg) center right no-repeat;
-    background-size: contain;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 20px;
-    text-transform: none;
-    color: rgb(255 230 134 / 60%);
-}
-
-.products-title.active {
-    background: transparent;
-    color: #682700;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.products-title.active::after {
-    content: 'Свернуть список';
-    background: url(../img/minus-products.svg) center right no-repeat;
-    background-size: contain;
-    color: rgb(104 39 0 / 60%);
-}
-
 .products-logo {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
     display: flex;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    max-width: 80px;
+    max-width: 120px;
     width: 100%;
-    margin-right: 40px;
 }
 
 .products-list-wrap {
-    display: none;
     padding: 20px;
 }
 
 .products-list {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1805,9 +1775,9 @@ table td:nth-child(3) {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    max-width: 86px;
+    max-width: 120px;
     width: 100%;
-    min-height: 160px;
+    min-height: 225px;
     margin: 0 auto 10px;
 }
 
@@ -1854,8 +1824,9 @@ table td:nth-child(3) {
 .faq-wrap {
     max-width: 580px;
     width: 100%;
-    height: 680px;
-    margin: 40px 0 0;
+    height: 670px;
+    /*margin: 40px 0 0;*/
+    margin: 0;
 }
 
 .faq-item {
@@ -1903,35 +1874,12 @@ table td:nth-child(3) {
 	position: relative;
     max-width: 560px;
     width: 100%;
-    min-height: 680px;
+    min-height: 670px;
     margin: 0;
     padding: 40px 10px 35px;
     background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
     box-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
     border-radius: 46px;
-}
-
-.feedback-wrap::before {
-    content: '';
-    position: absolute;
-    top: -75px;
-    right: -90px;
-    width: 321px;
-    height: 512px;
-    background: url(../img/feedback-decor1.png) center no-repeat;
-    background-size: contain;
-    z-index: -1;
-}
-
-.feedback-wrap::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    left: -35px;
-    width: 232px;
-    height: 231px;
-    background: url(../img/feedback-decor2.png) center no-repeat;
-    background-size: contain;
 }
 
 .feedback-title {
@@ -2834,88 +2782,36 @@ table td:nth-child(3) {
 
 .kv {
     position: absolute;
-    top: 40px;
-    left: -400px;
-    right: 0;
+    top: 30px;
+    left: 0;
+    right: -400px;
     margin: auto;
-    width: 500px;
-    height: 515px;
-    background: url(../img/box1.png) center 0 no-repeat;
+    width: 594px;
+    height: 572px;
+    background: url(../img/wooman.png) center 0 no-repeat;
     background-size: contain;
-    animation: 6s varnava infinite steps(1, end);
-}
-
-/*@keyframes varnava {
-    0% {
-        background: url(../img/varnava1.png) center 0 no-repeat;
-    }
-    33% {
-        background: url(../img/varnava2.png) center 0 no-repeat;
-    }
-    66% {
-        background: url(../img/varnava4.png) center 0 no-repeat;
-    }
-    100% {
-        background: url(../img/varnava1.png) center 0 no-repeat;
-    }
-}*/
-
-@keyframes varnava {
-    0% {
-        background: url(../img/box1.png) center 0 no-repeat;
-        background-size: contain;
-    }
-    33% {
-        background: url(../img/box2.png) center 0 no-repeat;
-        background-size: contain;
-    }
-    66% {
-        background: url(../img/box3.png) center 0 no-repeat;
-        background-size: contain;
-    }
-    100% {
-        background: url(../img/box1.png) center 0 no-repeat;
-        background-size: contain;
-    }
 }
 
 .action-info {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: 50px;
-    padding-top: 130px;
+    max-width: 380px;
+    margin-left: 10%;
+    padding-top: 70px;
+}
+
+.action-kv {
+    width: 380px;
+    height: 193px;
+    background: url(../img/kv.svg) center no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
 }
 
 .action-dates {
-    font-size: 16px;
-    line-height: 18px;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.action-title {
-    width: 413px;
-    height: 197px;
-    background: url(../img/kv-text.svg) center no-repeat;
+    width: 254px;
+    height: 95px;
+    background: url(../img/kurs.svg) center no-repeat;
     background-size: contain;
-    margin-bottom: 30px;
-}
-
-.action-info .btn-wrapper,
-.action-info .btn {
-    margin: 0;
-}
-
-.inst-label {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: -550px;
-    margin: auto;
-    width: 118px;
-    height: 125px;
-    background: url(../img/inst-label.png) center no-repeat;
-    background-size: contain;
+    margin: 0 auto 25px;
 }
 
 .steps-block {
@@ -2931,7 +2827,7 @@ table td:nth-child(3) {
     left: 0;
     right: 0;
     width: 100%;
-    height: 606px;
+    height: 700px;
     background: url(../img/bg-main2.png) center 0 no-repeat;
     background-size: 100% 100%;
 }
@@ -2964,32 +2860,32 @@ table td:nth-child(3) {
     margin: auto;
     width: 180px;
     height: 180px;
-    background: linear-gradient(235.93deg, #FFFFFF 16.19%, #FFE686 63.74%, #F7B545 106.56%);
+    background: #1C0701;
     border-radius: 100px;
     z-index: 0;
 }
 
 .step1 .step-img img {
     position: absolute;
-    top: 0;
-    left: -82px;
-    right: -58px;
+    top: 20px;
+    left: -10px;
+    right: -10px;
     margin: auto;
 }
 
 .step2 .step-img img {
     position: absolute;
-    top: 0;
-    left: -8px;
-    right: -37px;
+    top: 15px;
+    left: -9px;
+    right: -8px;
     margin: auto;
 }
 
 .step3 .step-img img {
     position: absolute;
     top: -50px;
-    left: 0;
-    right: 0;
+    left: -50px;
+    right: -50px;
     margin: auto;
 }
 
@@ -3000,7 +2896,7 @@ table td:nth-child(3) {
     justify-content: center;
     width: 50px;
     height: 50px;
-    margin: auto;
+    margin: 0 auto 15px;
     background: #EB2316;
     border-radius: 50px;
     font-weight: 900;
@@ -3026,6 +2922,7 @@ table td:nth-child(3) {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    color: #FFE686;
 }
 
 .step-text span {
@@ -3053,8 +2950,8 @@ table td:nth-child(3) {
 
 .prizes-title {
     font-weight: 900;
-    font-size: 62px;
-    line-height: 78px;
+    font-size: 40px;
+    line-height: 50px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -3085,8 +2982,6 @@ table td:nth-child(3) {
     text-align: center;
     text-transform: uppercase;
     color: #FFE686;
-    height: 48px;
-    margin-bottom: 50px;
 }
 
 .prize-wrapper {
@@ -3101,55 +2996,35 @@ table td:nth-child(3) {
     text-align: center;
 }
 
-.prize3 {
-    max-width: 500px;
-}
-
 .prize-img {
     position: relative;
-    height: 220px;
+    height: 260px;
     margin: 0 auto;
 }
 
 .prize-img::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: -30px;
+    left: -100px;
+    right: -100px;
+    bottom: 0;
     margin: auto;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(235.93deg, #FFFFFF 16.19%, #FFE686 63.74%, #F7B545 106.56%);
-    border-radius: 100px;
+    width: 260px;
+    height: 260px;
+    background: url(../img/light-360.png) center no-repeat;
+    background-size: contain;
+    mix-blend-mode: lighten;
     z-index: 0;
+    opacity: 1;
 }
 
-.prize3 .prize-img::before {
-    display: none;
-}
-
-.prize1 .prize-img img {
+.prize-img img {
     position: absolute;
-    top: -20px;
-    left: -12px;
-    right: -12px;
-    margin: auto;
-}
-
-.prize2 .prize-img img {
-    position: absolute;
-    top: -80px;
-    left: -65px;
-    right: -79px;
-    margin: auto;
-}
-
-.prize3 .prize-img img {
-    position: absolute;
-    top: -100px;
-    left: -26px;
-    right: -34px;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
     margin: auto;
 }
 
@@ -3173,7 +3048,7 @@ table td:nth-child(3) {
     background: linear-gradient(235.93deg, #FFFFFF 16.19%, #FFE686 63.74%, #F7B545 106.56%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .places-link {
@@ -3181,72 +3056,81 @@ table td:nth-child(3) {
     text-transform: uppercase;
 }
 
-.main-dust {
-    position: absolute;
-    top: -600px;
-    right: 0;
-    width: 674px;
-    height: 1028px;
-    background: url(../img/main-dust.png) center no-repeat;
-    background-size: contain;
-}
-
 .main-decor1 {
     position: absolute;
-    top: -130px;
-    left: -1000px;
-    right: 0;
+    top: 150px;
+    left: 0;
     margin: auto;
-    width: 188px;
-    height: 177px;
+    width: 110px;
+    height: 161px;
     background: url(../img/main-decor1.png) center no-repeat;
     background-size: contain;
 }
 
 .main-decor2 {
     position: absolute;
-    top: -240px;
-    left: 0;
-    right: -1200px;
+    top: 128px;
+    right: 0;
     margin: auto;
-    width: 268px;
-    height: 268px;
+    width: 158px;
+    height: 166px;
     background: url(../img/main-decor2.png) center no-repeat;
     background-size: contain;
 }
 
 .main-decor3 {
     position: absolute;
-    top: -160px;
-    left: -1000px;
+    top: -57px;
+    left: -1100px;
     right: 0;
     margin: auto;
-    width: 287px;
-    height: 308px;
+    width: 130px;
+    height: 91px;
     background: url(../img/main-decor3.png) center no-repeat;
+    background-size: contain;
+}
+
+.main-print {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: -1100px;
+    margin: auto;
+    width: 122px;
+    height: 117px;
+    background: url(../img/main-print.png) center no-repeat;
+    background-size: contain;
+}
+
+.main-dust {
+    position: absolute;
+    top: -280px;
+    right: 0;
+    margin: auto;
+    width: 254px;
+    height: 408px;
+    background: url(../img/main-dust.png) center no-repeat;
     background-size: contain;
 }
 
 .main-decor4 {
     position: absolute;
-    top: -230px;
+    top: -240px;
     left: 0;
-    right: -1150px;
     margin: auto;
-    width: 131px;
-    height: 317px;
+    width: 139px;
+    height: 420px;
     background: url(../img/main-decor4.png) center no-repeat;
     background-size: contain;
 }
 
 .main-decor5 {
     position: absolute;
-    top: 440px;
-    left: -1200px;
+    top: -120px;
     right: 0;
     margin: auto;
-    width: 102px;
-    height: 193px;
+    width: 237px;
+    height: 251px;
     background: url(../img/main-decor5.png) center no-repeat;
     background-size: contain;
 }
@@ -3453,12 +3337,8 @@ table td:nth-child(3) {
         right: -50px;
     }
 
-    .main-decor2 {
-        right: -1050px;
-    }
-
-    .main-decor4 {
-        right: -900px;
+    .main-print {
+        right: -880px
     }
 
     .prize-col {
@@ -3777,6 +3657,7 @@ table td:nth-child(3) {
         max-width: 375px;
         height: auto;
         max-height: 310px;
+        margin-top: 40px;
         margin-bottom: 50px;
     }
 
@@ -4067,15 +3948,15 @@ table td:nth-child(3) {
     }
 
     .main-block {
-        min-height: 675px;
+        min-height: 620px;
         background: url(../img/bg-main-mob.jpg) center -330px no-repeat;
         background-size: 100% 1005px;
     }
 
     .kv {
         top: 300px;
-        left: -50px;
-        right: -75px;
+        left: -100px;
+        right: -50px;
         width: 400px;
         height: 400px;
         background-size: contain !important;
@@ -4090,26 +3971,18 @@ table td:nth-child(3) {
         margin: auto;
     }
 
-    .action-title {
-        width: 261px;
-        height: 126px;
-        background: url(../img/kv-text-mob.svg) center no-repeat;
-        background-size: contain;
-        margin: 0 auto 20px;
-        order: -1;
+    .action-kv {
+        width: 280px;
+        height: 142px;
     }
 
-    .action-info .btn-wrapper, 
-    .action-info .btn {
-        margin: 0 auto;
-    }
-
-    .inst-label {
-        top: 370px;
+    .action-dates {
+        position: absolute;
+        top: 570px;
         left: 0;
-        right: -215px;
-        width: 96px;
-        height: 102px;
+        right: 0;
+        margin: auto;
+        z-index: 1;
     }
 
     .steps-block {
@@ -4118,14 +3991,14 @@ table td:nth-child(3) {
 
     .steps-block::before {
         top: -40px;
-        height: 1250px;
+        height: 1350px;
         background: url(../img/bg-main2-mob.png) center 0 no-repeat;
         background-size: 100% 100%;
     }
 
     .steps {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 80px;
     }
 
     .step1 {
@@ -4141,7 +4014,7 @@ table td:nth-child(3) {
     }
 
     .prizes-block::before {
-        height: 1900px;
+        height: 2000px;
         background: url(../img/bg-prizes-mob.jpg) center 0 no-repeat;
         background-size: 100% 100%;
     }
@@ -4179,74 +4052,24 @@ table td:nth-child(3) {
 
     .main-decor1-mob {
         position: absolute;
-        top: -30px;
-        left: -75px;
-        right: -50px;
+        top: 35px;
+        left: 0;
         margin: auto;
-        width: 379px;
-        height: 177px;
-        background: url(../img/main-decor01-mob.png) center no-repeat;
-        background-size: contain;
-    }
-
-    .main-decor1 {
-        display: none;
-        top: -140px;
-        left: -210px;
-        width: 182px;
-        height: 196px;
+        width: 73px;
+        height: 142px;
         background: url(../img/main-decor1-mob.png) center no-repeat;
         background-size: contain;
     }
 
-    .main-decor2 {
-        top: -120px;
-        right: -320px;
-        width: 72px;
-        height: 142px;
-        background: url(../img/main-decor2-mob.png) center no-repeat;
-        background-size: contain;
-    }
-
-    .main-decor3 {
-        top: -130px;
-        left: -50px;
-        right: -50px;
-        width: 324px;
-        height: 192px;
-        background: url(../img/main-decor3-mob.png) center no-repeat;
-        background-size: contain;
-    }
-
-    .main-decor4 {
-        top: 380px;
-        left: -300px;
-        right: 0;
-        width: 93px;
-        height: 228px;
-        background: url(../img/main-decor4-mob.png) center no-repeat;
-        background-size: contain;
-    }
-
-    .main-decor5 {
-        top: 510px;
-        left: 0;
-        right: -310px;
-        width: 75px;
-        height: 91px;
-        background: url(../img/main-decor5-mob.png) center no-repeat;
-        background-size: contain;
-    }
-
-    .main-decor6-mob {
+    .main-decor2-mob {
         position: absolute;
-        top: 1000px;
-        left: 0;
-        right: -370px;
+        top: -110px;
+        left: -130px;
+        right: -150px;
         margin: auto;
-        width: 86px;
-        height: 98px;
-        background: url(../img/main-decor6-mob.png) center no-repeat;
+        width: 464px;
+        height: 197px;
+        background: url(../img/main-decor2-mob.png) center no-repeat;
         background-size: contain;
     }
 
