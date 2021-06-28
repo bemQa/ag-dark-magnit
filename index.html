@@ -39,6 +39,15 @@
 					<div class="ex"></div>
 				</div>
 			</header>
+			<div class="tooltip">
+				<a href="#!" class="tooltip-whatsapp-link mobile-visible" target="_blank"></a>
+				<a href="#!" class="close-tooltip"></a>
+				<div class="tooltip-whatsapp-icon"></div>
+				<div class="tooltip-text">Регистрируй чеки <br class="mobile-visible">в <br class="desktop-visible">чат-боте</div>
+				<div class="btn-wrapper desktop-visible">
+					<a href="#!" class="btn tooltip-btn" target="_blank">В чат-бот</a>
+				</div>
+			</div>
 			<section class="main-block">
 				<div class="main-decor1 desktop-visible"></div>
 				<div class="main-decor1-mob"></div>
@@ -77,7 +86,7 @@
 							<div class="step-num">2</div>
 							<div class="step-title">Загружайте чеки</div>
 							<div class="step-text">
-								в чат-боте или на сайте и получайте <br>приз гарантированно! 
+								в <a href="#!" class="link" target="_blank">чат-боте</a> или на сайте и получайте <br>приз гарантированно! 
 							</div>
 						</div>
 						<div class="step step3">
@@ -470,6 +479,29 @@
                     <div class="popup__desc">Такой чек уже был загружен ранее. Попробуйте загрузить другой чек.</div>
                     <div class="btn-wrapper">
 						<a href="#!" class="btn popup-btn js-close-popup">Понятно</a>
+					</div>
+                </div>
+            </div>
+		</div>
+		<div id="chatbot" class="popup js-popup-show">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#682700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner whatsapp-popup__inner">
+                	<div class="whatsapp-icon">
+                		<img src="img/whatsapp-icon.png" alt="">
+                	</div>
+                    <div class="popup__desc">Загрузи чеки при помощи <br>чат-бота в своём мессенджере</div>
+                    <div class="btn-wrapper whatsapp-btn-wrapper">
+						<a href="#!" class="btn popup-btn2 whatsapp-btn" target="_blank">Чат бот Whats App</a>
+					</div>
+					<div class="popup__desc">или загрузи чек на сайте</div>
+                    <div class="btn-wrapper">
+						<a href="#!" class="btn popup-btn2 pop-op" data-popup="auth">Зарегистрировать чек</a>
 					</div>
                 </div>
             </div>
