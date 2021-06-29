@@ -2236,8 +2236,8 @@ table td:nth-child(3) {
 }
 
 .lk-prize-code {
-    font-size: 26px;
-    line-height: 29px;
+    font-size: 21px;
+    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -2248,6 +2248,7 @@ table td:nth-child(3) {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+    min-height: 52px;
 }
 
 .lk-prize-text {
@@ -2255,13 +2256,13 @@ table td:nth-child(3) {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .lk-prize-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    text-align: center;
     color: #EB2316;
 }
 
@@ -3165,7 +3166,7 @@ table td:nth-child(3) {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(211.98deg, #00E141 13.69%, #A1E24E 58.11%, #07E141 97.37%);
+    background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
     box-shadow: 0px 5px 15px rgba(104, 39, 0, 0.3);
     border-radius: 23px;
     z-index: 15;
