@@ -1937,7 +1937,7 @@ table td:nth-child(3) {
 .profile-name {
     max-width: 430px;
     min-width: 350px;
-    min-height: 54px;
+    min-height: 66px;
     font-weight: 900;
     font-size: 21px;
     line-height: 32px;
@@ -3169,7 +3169,7 @@ table td:nth-child(3) {
     background: linear-gradient(217.17deg, #FFFFFF -55.4%, #FFE686 54.82%, #F7B545 152.24%);
     box-shadow: 0px 5px 15px rgba(104, 39, 0, 0.3);
     border-radius: 23px;
-    z-index: 15;
+    z-index: 10;
 }
 
 .close-tooltip {
@@ -3675,7 +3675,7 @@ table td:nth-child(3) {
         font-size: 21px;
         line-height: 28px;
         min-width: auto;
-        min-height: auto;
+        min-height: 58px;
     }
 
     .profile-name span {
